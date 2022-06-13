@@ -19,7 +19,7 @@ Here are some ideas to get you started:
   - Japanese (very slowly) 🍙
 - 📫 How to reach me:
   - Discord: HyphenSam#5409
-  - [t.me/HyphenSam](https://t.me/HyphenSam)
+  - [Telegram](https://t.me/HyphenSam)
   - [AniList](anilist.co/user/HyphenSam/)
   - Signal: When they add usernames :)
 - 😄 Pronouns: He/him.
