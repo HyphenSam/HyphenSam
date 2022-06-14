@@ -20,7 +20,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me:
   - Discord: HyphenSam#5409
   - [Telegram](https://t.me/HyphenSam)
-  - [AniList](anilist.co/user/HyphenSam/)
+  - [AniList](https://anilist.co/user/HyphenSam/)
   - Signal: When they add usernames :)
 - 😄 Pronouns: He/him.
 - ⚡ Fun facts:
