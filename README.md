@@ -21,6 +21,7 @@ Here are some ideas to get you started:
   - Discord: HyphenSam#5409
   - [Telegram](https://t.me/HyphenSam)
   - [AniList](https://anilist.co/user/HyphenSam/)
+  - [Github Discussions](https://github.com/HyphenSam/HyphenSam/discussions) I guess
   - Signal: When they add usernames :)
 - 😄 Pronouns: He/him.
 - ⚡ Fun facts:
