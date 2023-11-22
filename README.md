@@ -14,21 +14,16 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-- 🌱 I’m currently learning: 
-  - Rust 🦀
-  - Japanese (very slowly) 🍙
-  - Thai 
 - 📫 How to reach me:
-  - Discord: HyphenSam#5409
+  - Discord: @hyphensam
+  - Matrix: @hyphensam:beeper.com
   - [Telegram](https://t.me/HyphenSam)
-  - [AniList](https://anilist.co/user/HyphenSam/)
   - [Github Discussions](https://github.com/HyphenSam/HyphenSam/discussions) I guess
-  - Signal: When they add usernames :)
+  - Signal: When they add usernames :) (in 2024!)
 - 😄 Pronouns: He/him.
 - ⚡ Fun facts:
   - I like anime, manga, visual novels, and VTubers
   - My oshi is Omaru Polka
-  - Mostly pescetarian for environmental reasons
   - My favourite anime is Steins;Gate
   - My favourite manga is Kaguya-sama: Love is War
   - My favourite VN is VA-11 Hall-A
