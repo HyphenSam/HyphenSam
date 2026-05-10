@@ -19,7 +19,7 @@ Here are some ideas to get you started:
   - Matrix: @hyphensam:beeper.com
   - [Telegram](https://t.me/HyphenSam)
   - [Github Discussions](https://github.com/HyphenSam/HyphenSam/discussions) I guess
-  - Signal: When they add usernames :) (in 2024!)
+  - Signal: HyphenSam.01
 - 😄 Pronouns: He/him.
 - ⚡ Fun facts:
   - I like anime, manga, visual novels, and VTubers
