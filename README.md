@@ -37,6 +37,6 @@
 
 ### 🦐 Feed the fish
 
-The fish have been fed **<!--fed-->0<!--/fed-->** times. Last fed by <!--feeder-->nobody yet 😢<!--/feeder-->.
+The fish have been fed **<!--fed-->1<!--/fed-->** times. Last fed by <!--feeder-->[@HyphenSam](https://github.com/HyphenSam)<!--/feeder-->.
 
 [**→ Drop in a shrimp**](https://github.com/HyphenSam/HyphenSam/issues/new?title=feed&body=%F0%9F%A6%90%20%28just%20press%20Create%2C%20the%20fish%20will%20do%20the%20rest%29)
