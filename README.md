@@ -1,4 +1,4 @@
-### Hi there 👋
+### Glug glug glug
 
 <!--
 **HyphenSam/HyphenSam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,17 +14,32 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-- 📫 How to reach me:
   - Discord: @hyphensam
   - Matrix: @hyphensam:beeper.com
-  - [Telegram](https://t.me/HyphenSam)
-  - [Github Discussions](https://github.com/HyphenSam/HyphenSam/discussions) I guess
   - Signal: HyphenSam.01
-- 😄 Pronouns: He/him.
-- ⚡ Fun facts:
-  - I like anime, manga, visual novels, and VTubers
-  - My oshi is Omaru Polka
-  - My favourite anime is Steins;Gate
-  - My favourite manga is Kaguya-sama: Love is War
-  - My favourite VN is VA-11 Hall-A
-  - I don't really have a favourite game. What I like most are Portal and CrossCode.
+
+```
+
+                       /(  /:./\
+                    ,_/:`-/::/::/\_ ,
+                    |:|::/::/::/::;'( ,,
+                    |:|:/::/::/:;'::,':(.( ,
+                _,-'"HHHHH"""HHoo--.::::,-:(,----..._
+            ,-"HHHb  "HHHHb  HHHHb   HHHoo-.::::::::::-.
+          ,'   "HHHb  "HHHHb "HHHH   HHHHH  Hoo::::::::::.              _,.-::`.
+        ,'      "HH`.  "HHHH  HHHHb  "HHHH  "HHHb`-:::::::.        _.-:::::::;'
+       / ,-.        :   HHHH  "HHHH   HHHH   HHHH  Hoo::::;    _,-:::::::::;'
+     ,'  `-'        :   HHHH   HHHH   "HHH   "HHH  "HHHH-:._,o:::::::::::;'
+    /               :   HHHH __HHHP...........HHH   HHHF   HHH:::::::;:;'
+   /_               ; _,-::::::.:::::::::::::''HH   HHH    "HH::::::::(
+   (_"-.,          /  : :.::.:.::::::::::,d   HHH   "HH     HH::::::::::.
+    (,-'          /    :.::.:::.::::::;'HHH   "HH    HH,::"-.H::::::::::::.
+     ".         ,'    : :.:::.::::::;'  "HH    HH   _H-:::)   `-::::::::::::.
+       `-.___,-'       `-.:::::,--'"     "H    HH,-::::::/        "--.::::::::.
+            """---..__________________,-------'::::::::;/               """---'
+                        \::.:---. Krogg    `::::::::::;'
+                         \::::::|            `::;-'""
+                          `.::::|
+                            `.::| 
+                              `-'
+```
