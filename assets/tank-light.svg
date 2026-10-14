@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 200" width="840" height="200" role="img" aria-labelledby="t">
+  <title id="t">A shallow reef with fish swimming past</title>
+  <style>
+    .swim-r { animation: swim-r linear infinite; }
+    .swim-l { animation: swim-l linear infinite; }
+    @keyframes swim-r { from { transform: translateX(-100px); } to { transform: translateX(940px); } }
+    @keyframes swim-l { from { transform: translateX(940px); } to { transform: translateX(-100px); } }
+
+    .bob { animation: bob 3s ease-in-out infinite alternate; }
+    @keyframes bob { from { transform: translateY(-4px); } to { transform: translateY(4px); } }
+
+    .tail { transform-box: fill-box; transform-origin: right center; animation: wag .45s ease-in-out infinite alternate; }
+    @keyframes wag { from { transform: scaleY(.7); } to { transform: scaleY(1.1); } }
+
+    .sway { transform-box: fill-box; transform-origin: bottom center; animation: sway 4s ease-in-out infinite alternate; }
+    @keyframes sway { from { transform: rotate(-7deg); } to { transform: rotate(7deg); } }
+
+    .bub { animation: rise linear infinite; }
+    @keyframes rise {
+      0%   { transform: translate(0, 0); opacity: 0; }
+      10%  { opacity: .9; }
+      50%  { transform: translate(5px, -95px); }
+      100% { transform: translate(-3px, -190px); opacity: 0; }
+    }
+
+    .ray { animation: shimmer 6s ease-in-out infinite alternate; }
+    @keyframes shimmer { from { opacity: .25; } to { opacity: .7; } }
+
+    .glug { font: 600 12px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #ffffff; animation: rise 14s linear infinite; animation-delay: -3s; }
+
+    @media (prefers-reduced-motion: reduce) { * { animation-play-state: paused !important; } }
+  </style>
+
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cdf2ff"/>
+      <stop offset=".55" stop-color="#5cc2e6"/>
+      <stop offset="1" stop-color="#2a8fbd"/>
+    </linearGradient>
+    <linearGradient id="ray-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="840" height="200" rx="14"/></clipPath>
+    <clipPath id="clown-body"><ellipse cx="34" cy="15" rx="22" ry="10"/></clipPath>
+
+    <!-- generic fish, faces right, coloured with currentColor -->
+    <symbol id="fish" viewBox="0 0 60 30">
+      <path class="tail" d="M14 15 L1 4 Q5 15 1 26 Z" fill="currentColor"/>
+      <path d="M28 6 Q35 -1 43 6 Z" fill="currentColor" opacity=".75"/>
+      <ellipse cx="34" cy="15" rx="22" ry="11" fill="currentColor"/>
+      <path d="M25 9 Q29 15 25 21" stroke="#ffffff" stroke-opacity=".4" stroke-width="2" fill="none"/>
+      <circle cx="47" cy="12" r="3" fill="#ffffff"/>
+      <circle cx="48" cy="12" r="1.5" fill="#1b2a38"/>
+    </symbol>
+
+    <!-- clownfish -->
+    <symbol id="clown" viewBox="0 0 60 30">
+      <path class="tail" d="M14 15 L1 5 Q5 15 1 25 Z" fill="#ff7a1a" stroke="#2b1a10" stroke-width="1.2"/>
+      <ellipse cx="34" cy="15" rx="22" ry="10" fill="#ff7a1a"/>
+      <g clip-path="url(#clown-body)" fill="#ffffff" stroke="#2b1a10" stroke-width="1.2">
+        <rect x="20" y="0" width="5" height="30" rx="2"/>
+        <rect x="33" y="0" width="6" height="30" rx="2"/>
+        <rect x="47" y="0" width="4" height="30" rx="2"/>
+      </g>
+      <ellipse cx="34" cy="15" rx="22" ry="10" fill="none" stroke="#2b1a10" stroke-width="1.2"/>
+      <circle cx="52" cy="12" r="2.4" fill="#ffffff"/>
+      <circle cx="52.6" cy="12" r="1.2" fill="#1b2a38"/>
+    </symbol>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="840" height="200" fill="url(#water)"/>
+
+    <!-- sun rays -->
+    <polygon class="ray" points="120,0 170,0 260,200 160,200" fill="url(#ray-grad)"/>
+    <polygon class="ray" points="380,0 410,0 470,200 400,200" fill="url(#ray-grad)" style="animation-delay:-2s"/>
+    <polygon class="ray" points="610,0 660,0 740,200 640,200" fill="url(#ray-grad)" style="animation-delay:-4s"/>
+
+    <!-- back seaweed -->
+    <g transform="translate(60,182)"><path class="sway" d="M0 0 q-9 -18 0 -36 q9 -18 0 -36 q-9 -18 0 -30" stroke="#3aa76d" stroke-width="7" fill="none" stroke-linecap="round"/></g>
+    <g transform="translate(78,184)"><path class="sway" style="animation-delay:-1.5s" d="M0 0 q8 -16 0 -32 q-8 -16 0 -32" stroke="#4fc085" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+    <g transform="translate(700,182)"><path class="sway" style="animation-delay:-2.5s" d="M0 0 q-9 -18 0 -36 q9 -18 0 -36 q-9 -18 0 -36" stroke="#3aa76d" stroke-width="7" fill="none" stroke-linecap="round"/></g>
+    <g transform="translate(718,184)"><path class="sway" style="animation-delay:-.7s" d="M0 0 q8 -16 0 -32 q-8 -16 0 -28" stroke="#4fc085" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+
+    <!-- fish -->
+    <g class="swim-r" style="animation-duration:22s;animation-delay:-4s"><g class="bob"><use href="#fish" x="0" y="40" width="60" height="30" style="color:#ff9f43"/></g></g>
+    <g class="swim-l" style="animation-duration:28s;animation-delay:-15s"><g class="bob" style="animation-delay:-1s"><use href="#fish" x="-70" y="78" width="70" height="35" transform="scale(-1 1)" style="color:#3a7bd5"/></g></g>
+    <g class="swim-r" style="animation-duration:18s;animation-delay:-11s"><g class="bob" style="animation-delay:-2s"><use href="#clown" x="0" y="112" width="54" height="27"/></g></g>
+    <g class="swim-l" style="animation-duration:34s;animation-delay:-6s"><g class="bob"><use href="#fish" x="-50" y="22" width="50" height="25" transform="scale(-1 1)" style="color:#ffd23f"/></g></g>
+    <g class="swim-r" style="animation-duration:26s;animation-delay:-19s"><g class="bob" style="animation-delay:-.5s"><use href="#fish" x="0" y="132" width="44" height="22" style="color:#e05a7a"/></g></g>
+
+    <!-- school of tiny fish -->
+    <g class="swim-l" style="animation-duration:40s;animation-delay:-28s">
+      <g class="bob" style="animation-duration:2s">
+        <use href="#fish" x="-20" y="58" width="20" height="10" transform="scale(-1 1)" style="color:#e9f6ff"/>
+        <use href="#fish" x="-44" y="50" width="20" height="10" transform="scale(-1 1)" style="color:#e9f6ff"/>
+        <use href="#fish" x="-40" y="66" width="20" height="10" transform="scale(-1 1)" style="color:#e9f6ff"/>
+        <use href="#fish" x="-66" y="58" width="20" height="10" transform="scale(-1 1)" style="color:#e9f6ff"/>
+        <use href="#fish" x="-64" y="72" width="20" height="10" transform="scale(-1 1)" style="color:#e9f6ff"/>
+      </g>
+    </g>
+
+    <!-- sand -->
+    <path d="M0 174 Q60 164 120 172 T240 170 T360 174 T480 168 T600 173 T720 169 T840 172 V200 H0 Z" fill="#f2dfae"/>
+    <ellipse cx="200" cy="184" rx="6" ry="3" fill="#d8c38f"/>
+    <ellipse cx="520" cy="188" rx="8" ry="3.5" fill="#d8c38f"/>
+    <ellipse cx="640" cy="182" rx="4" ry="2" fill="#d8c38f"/>
+
+    <!-- coral -->
+    <g transform="translate(300,176)" stroke="#ff8a80" stroke-width="7" stroke-linecap="round" fill="none">
+      <path d="M0 0 V-30 M0 -16 L-14 -30 M0 -22 L12 -40 M-14 -30 L-18 -42 M12 -40 L18 -50"/>
+    </g>
+    <g transform="translate(560,178)" stroke="#c77dff" stroke-width="6" stroke-linecap="round" fill="none">
+      <path d="M0 0 V-24 M0 -12 L12 -26 M0 -18 L-10 -32 M12 -26 L14 -36"/>
+    </g>
+    <ellipse cx="455" cy="176" rx="22" ry="12" fill="#ffb26b"/>
+    <path d="M438 174 q6 -6 12 0 t12 0 t12 0" stroke="#e8914b" stroke-width="2" fill="none"/>
+    <path d="M440 180 q6 -6 12 0 t12 0 t12 0" stroke="#e8914b" stroke-width="2" fill="none"/>
+
+    <!-- front seaweed -->
+    <g transform="translate(380,192)"><path class="sway" style="animation-delay:-3s" d="M0 0 q-8 -14 0 -28 q8 -14 0 -26" stroke="#2f8f5b" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+    <g transform="translate(800,192)"><path class="sway" style="animation-delay:-1s" d="M0 0 q-8 -14 0 -28 q8 -14 0 -28 q-8 -14 0 -22" stroke="#2f8f5b" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+
+    <!-- bubbles -->
+    <g fill="#ffffff" fill-opacity=".25" stroke="#ffffff" stroke-opacity=".9" stroke-width="1.2">
+      <circle class="bub" cx="300" cy="170" r="4" style="animation-duration:7s"/>
+      <circle class="bub" cx="306" cy="176" r="2.5" style="animation-duration:6s;animation-delay:-2s"/>
+      <circle class="bub" cx="455" cy="168" r="3" style="animation-duration:8s;animation-delay:-5s"/>
+      <circle class="bub" cx="700" cy="172" r="5" style="animation-duration:9s;animation-delay:-1s"/>
+      <circle class="bub" cx="708" cy="178" r="2" style="animation-duration:6.5s;animation-delay:-4s"/>
+      <circle class="bub" cx="90" cy="176" r="3.5" style="animation-duration:8.5s;animation-delay:-6s"/>
+    </g>
+    <text class="glug" x="590" y="170">glug</text>
+  </g>
+</svg>

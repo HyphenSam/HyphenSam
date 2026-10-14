@@ -1,19 +1,10 @@
 ### Glug glug glug °‧ 𓆝 𓆟 𓆞 ·.
 
-<!--
-**HyphenSam/HyphenSam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tank-dark.svg">
+  <img src="assets/tank-light.svg" alt="An animated aquarium with fish swimming past" width="100%">
+</picture>
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
   - Discord: @hyphensam
   - Matrix: @hyphensam:beeper.com
   - Signal: HyphenSam.01
@@ -43,3 +34,9 @@ Here are some ideas to get you started:
                             `.::| 
                               `-'
 ```
+
+### 🦐 Feed the fish
+
+The fish have been fed **<!--fed-->0<!--/fed-->** times. Last fed by <!--feeder-->nobody yet 😢<!--/feeder-->.
+
+[**→ Drop in a shrimp**](https://github.com/HyphenSam/HyphenSam/issues/new?title=feed&body=%F0%9F%A6%90%20%28just%20press%20Create%2C%20the%20fish%20will%20do%20the%20rest%29)
