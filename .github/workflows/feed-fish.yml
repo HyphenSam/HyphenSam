@@ -1,0 +1,53 @@
+name: Feed the fish
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+# One feeding at a time so two visitors don't clash on the same commit
+concurrency: feed-the-fish
+
+jobs:
+  feed:
+    # startsWith is case-insensitive, so "Feed", "feed me" etc. all count
+    if: startsWith(github.event.issue.title, 'feed')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Feed the fish
+        env:
+          FEEDER: ${{ github.event.issue.user.login }}
+        run: |
+          count=$(grep -oP '(?<=<!--fed-->)\d+(?=<!--/fed-->)' README.md)
+          count=$((count + 1))
+          sed -i "s|<!--fed-->[0-9]*<!--/fed-->|<!--fed-->$count<!--/fed-->|" README.md
+          sed -i "s|<!--feeder-->.*<!--/feeder-->|<!--feeder-->[@$FEEDER](https://github.com/$FEEDER)<!--/feeder-->|" README.md
+          echo "COUNT=$count" >> "$GITHUB_ENV"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "🐟 fed by @$FEEDER (#$count)"
+          git pull --rebase
+          git push
+
+      - name: Thank the feeder and close the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          replies=(
+            "glug glug glug 🐟 (that means thank you)"
+            "The fish ate it in one bite. 🦐➡️🐟"
+            "Nom. 🐠"
+            "A small fish looked at the shrimp, then at you, then ate the shrimp. 🐟"
+            "°‧ 𓆝 𓆟 𓆞 ·. the fish are pleased"
+          )
+          reply=${replies[$((RANDOM % ${#replies[@]}))]}
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" \
+            --body "$reply"$'\n\n'"The fish have now been fed **$COUNT** times."
+          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY"
